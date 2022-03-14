@@ -64,10 +64,10 @@ const jsFiles = [
 // TASKS
 // объявляем функции под сборки (все пути относительные)
 
-gulp.task('deploy', function() {
+gulp.task('deploy', function () {
     return gulp.src('./dist/**/*')
-      .pipe(ghPages());
-  });
+        .pipe(ghPages());
+});
 
 
 // Локальный сервер
@@ -127,7 +127,7 @@ function cssWatch(cb) {
     return src(srcPath + 'assets/scss/style.scss') // если порядок файлов не важен, то: return src(path.src.css, {base: srcPath + 'assets/scss/'})  
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function(err) {
+            errorHandler: function (err) {
                 notify.onError({
                     title: "SCSS Error",
                     message: "Error: <%= error.message %>"
@@ -155,7 +155,7 @@ function js(cb) {
     return src(jsFiles) // если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function(err) {
+            errorHandler: function (err) {
                 notify.onError({
                     title: "JS Error",
                     message: "Error: <%= error.message %>"
@@ -179,7 +179,7 @@ function jsWatch(cb) {
     return src(jsFiles) // если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function(err) {
+            errorHandler: function (err) {
                 notify.onError({
                     title: "JS Error",
                     message: "Error: <%= error.message %>"

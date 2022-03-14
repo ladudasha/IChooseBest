@@ -389,10 +389,13 @@ template {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 100vh;
+    gap: 100px;
 }
 
 .main__social {
@@ -415,4 +418,34 @@ template {
     left: 220px;
     max-width: 400px;
     width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        padding: 0 20px;
+    }
 }
