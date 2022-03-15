@@ -335,52 +335,13 @@ template {
 [hidden] {
   display: none; }
 
-.main {
-  background-image: url(./../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  min-height: 100vh;
-  position: relative; }
-  .main__center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    min-height: 100vh;
-    gap: 100px; }
-  .main__social {
-    position: absolute;
-    bottom: 80px;
-    right: 100px;
-    display: flex;
-    flex-direction: column; }
-  .main__social-in {
-    margin-bottom: 70px; }
-  .main__text-right {
-    position: absolute;
-    bottom: 60px;
-    left: 220px;
-    max-width: 400px;
-    width: 100%; }
-
 .container {
-  max-width: 1920px;
+  max-width: 375px;
   width: 100%;
-  margin: 0 auto; }
-  @media screen and (max-width: 1500px) {
+  margin: 0 auto;
+  padding: 0 20px; }
+  @media screen and (min-width: 1216px) {
     .container {
-      padding: 0 40px; } }
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 0 50px; } }
-  @media screen and (max-width: 576px) {
-    .container {
-      padding: 0 40px; } }
-  @media screen and (max-width: 360px) {
-    .container {
-      padding: 0 20px; } }
+      padding: 0 10px; } }
 
 /*# sourceMappingURL=style.min.css.map */
